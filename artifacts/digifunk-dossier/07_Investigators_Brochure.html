@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang='de'><head><meta charset='utf-8'><title>07_Investigators_Brochure</title><style>
+body { font-family: Georgia, 'Times New Roman', serif; max-width: 920px; margin: 40px auto; line-height: 1.45; color: #111; }
+h1 { font-size: 20pt; }
+h2 { font-size: 15pt; margin-top: 26px; }
+h3 { font-size: 12.5pt; }
+table { font-size: 10.5pt; margin: 12px 0 20px; width: 100%; }
+th { background: #f2f2f2; text-align: left; }
+td, th { vertical-align: top; }
+code { font-family: Consolas, monospace; font-size: 0.9em; }
+blockquote { border-left: 3px solid #333; padding-left: 12px; color: #333; }
+.headerblock { border: 1px solid #222; padding: 12px 16px; margin-bottom: 24px; }
+.small { font-size: 10pt; color: #333; }
+</style></head><body><h1>Investigator’s Brochure (Prüfprodukte)</h1>
+<p><strong>DIGIFUNK-Inntal · Dokument 07 · Version 1.0 · 08.09.2026</strong> Hersteller / Verfasser: Virtual Care Solution, Moustafa Ali Für: institutionelle PI AMEOS Klinikum Inntal, CMO Dr. med. univ. Margarete Liebmann Grundlage: Technical Project Description v1.1 (05.09.2026), eingefroren für diese Studie</p>
+<p>Diese IB beschreibt die <strong>Prüfprodukte</strong>, nicht die klinische Verantwortung. Die PI entscheidet über den Einsatz am Menschen.</p>
+<hr/>
+<h2>1. Status</h2>
+<p>Die vier Instrumente sind <strong>Forschungsprototypen ohne CE-Kennzeichnung</strong>. Sie sind in dieser Studie Prüfprodukte. Sie diagnostizieren nicht, therapieren nicht, alarmieren nicht.</p>
+<p>Software-Freeze: Dokument 12. Algorithmische Neural-Net-Upgrades (Roadmap v1.1 Abschnitt 6) sind <strong>nicht</strong> Teil dieser IB-Version.</p>
+<h2>2. Gemeinsame Architektur</h2>
+<ul>
+<li>Browser, vollständig client-side (Web Audio, MediaPipe Pose, localStorage)</li>
+<li>Keine Cloud-Inferenz, kein Hersteller-Backend für die Messung</li>
+<li>Studien-Build: WhatsApp-/E-Mail-/QR-Share <strong>aus</strong>, Ampelfarben und „Risiko-Score“-Anzeige gegenüber Patient und Behandler <strong>aus</strong></li>
+<li>Laufzeit nur auf von der PI kontrollierten Studien-Geräten (Klinik-Tablets/Laptops); Home-Teil nur nach Extra-Consent und SOP</li>
+</ul>
+<h2>3. Breathscope</h2>
+<ul>
+<li>5 s forcierte Exspiration, Mikrofon, RMS-Peak</li>
+<li>PEF-Proxy: Peak × 800; FEV1-Proxy über Größen-/Altersformel</li>
+<li>Das sind <strong>keine</strong> spirometrischen Messwerte. Validierung gegen Klinik-Spirometer, sofern am Standort vorhanden</li>
+<li>Risiko: Husten, kurz Schwindel, sehr selten Synkope. Sitzend, Abbruch bei Unwohlsein</li>
+</ul>
+<h2>4. V27 Biomechanics Engine (GaitScope)</h2>
+<ul>
+<li>MediaPipe Pose, Umgebungskamera</li>
+<li>Knie-/Hüftwinkel, Schrittdetektion, Kadenz, Schrittlängenschätzung, Asymmetrie</li>
+<li>Interner zusammengesetzter Score existiert im Code; im Studien-Build <strong>nicht angezeigt</strong>, nur optional als blinder Explorativparameter der Biometrie</li>
+<li>Risiko: Stolpern. Freier Gangraum, Begleitung</li>
+</ul>
+<h2>5. ROM Lens</h2>
+<ul>
+<li>Rückkamera, Landmark-Winkel gegen kalibrierte Neutralposition</li>
+<li>Risiko: bewegungsassoziierter Schmerz. Stopp-Wort, keine forcierte Endgrade</li>
+</ul>
+<h2>6. ROM Lens CS (Cervical)</h2>
+<ul>
+<li>Frontkamera, Ebenen Flexion, Extension, Rotation, Lateralflexion</li>
+<li>Red-Flag-Ausschluss vor Messung (SOP Dokument 13)</li>
+<li>Gesicht entsteht unvermeidbar im Arbeitsspeicher; Persistenz nur mit Extra-Consent</li>
+</ul>
+<h2>7. Bekannte Limitationen (der PI zur Kenntnis)</h2>
+<ul>
+<li>Mikrofon-Peak ist gain- und geräuschabhängig</li>
+<li>Pose-Schätzung hängt von Beleuchtung, Bekleidung, Kameradistanz ab</li>
+<li>Kein 3-D-optisches Motion-Capture im Produkt</li>
+<li>Referenzmethoden am Standort können schmaler sein als ein laborbasiertes Goldstandard-Labor; der Prüfplan bildet das ab</li>
+</ul>
+<h2>8. Kennzeichnung gegenüber Nutzenden</h2>
+<p>UI-Text im Studien-Build (DE): „Forschungsinstrument der Studie DIGIFUNK-Inntal. Keine Diagnose. Keine Therapieänderung. Messung nur im Studienkontext unter Verantwortung von AMEOS Klinikum Inntal.“</p>
+<h2>9. Änderungen</h2>
+<p>Jede Änderung an Algorithmus, UI-Risikoanzeige oder Datenfluss erfordert Freeze-Bruch, Kenntnis der CMO und in der Regel ein Protokoll-Amendment.</p>
+<p>Hersteller: Moustafa Ali, Virtual Care Solution Datum: 08.09.2026 Kenntnisnahme CMO: Unterschrift ______________________ Datum ______________________</p></body></html>

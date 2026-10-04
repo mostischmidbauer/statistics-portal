@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Clinimetric Lab",
+      "hasCanvas": false,
+      "bodyTextLen": 2533,
+      "bodyTextHash": "119905a78b76c68a3eb33a1e40c255eda05ab48546732044ce8bd65fc59e4112",
+      "bodyTextPrefix": "Clinimetric Lab Research CRF · not a medical device EN DE Dashbo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Clinimetric Lab",
+      "hasCanvas": false,
+      "bodyTextLen": 2514,
+      "bodyTextHash": "35db60914ce5c671341a78b1b4933eefe7f2a032f04c594ae9b9e319f611cce9",
+      "bodyTextPrefix": "Clinimetric Lab Research CRF · not a medical device EN DE Dashbo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND WARNING: /workspace/public/og.jpg exists but /workspace/src/lib/og/site.json is missing \"card\": \"custom\". Bake infers custom from the file, but set the flag in /workspace/src/lib/og/site.json per /workspace/.grok/skills/og/SKILL.md so identity is explicit."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang='de'><head><meta charset='utf-8'><title>08_Risikomanagementakte_ISO14971_Kurz</title><style>
+body { font-family: Georgia, 'Times New Roman', serif; max-width: 920px; margin: 40px auto; line-height: 1.45; color: #111; }
+h1 { font-size: 20pt; }
+h2 { font-size: 15pt; margin-top: 26px; }
+h3 { font-size: 12.5pt; }
+table { font-size: 10.5pt; margin: 12px 0 20px; width: 100%; }
+th { background: #f2f2f2; text-align: left; }
+td, th { vertical-align: top; }
+code { font-family: Consolas, monospace; font-size: 0.9em; }
+blockquote { border-left: 3px solid #333; padding-left: 12px; color: #333; }
+.headerblock { border: 1px solid #222; padding: 12px 16px; margin-bottom: 24px; }
+.small { font-size: 10pt; color: #333; }
+</style></head><body><h1>Risikomanagementakte (ISO 14971, Kurzfassung Studienkontext)</h1>
+<p><strong>DIGIFUNK-Inntal · Dokument 08 · Version 1.0 · 08.09.2026</strong> Verantwortlich für die Software-Risikoakte: Virtual Care Solution Verantwortlich für den klinischen Einsatz: institutionelle PI AMEOS Klinikum Inntal (CMO Dr. Liebmann)</p>
+<p>Kein Ersatz für eine vollständige technische Dokumentation nach MDR Anhang II. Ausreichend als studienbezogene Hazard-Analyse für Art. 82 / EK.</p>
+<hr/>
+<h2>1. Intended-use in der Studie</h2>
+<p>Messung und wissenschaftliche Bewertung. <strong>Nicht:</strong> Diagnose, Therapie, Alarmierung, Triage, Entlassmanagement.</p>
+<h2>2. Wesentliche Gefährdungen</h2>
+<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse;width:100%'>
+<tr><th>ID</th><th>Hazard</th><th>Harm</th><th>Schwere (vor/nach Kontrolle)</th><th>Kontrolle in dieser Studie</th></tr>
+<tr><td>H1</td><td>Falsch niedrige Atem-Proxy-Werte</td><td>Unnötige Angst, Fehlinterpretation als Lungenbefund</td><td>Mittel → Niedrig</td><td>Keine Therapieentscheidung; Ampel aus; Werte nur auf Wunsch mit Behandler</td></tr>
+<tr><td>H2</td><td>Falsch hoher/low ROM</td><td>Falsches Leistungsbild</td><td>Mittel → Niedrig</td><td>Nur Forschung; Referenzmessung parallel</td></tr>
+<tr><td>H3</td><td>„Risiko-Score“ als Sturzrisiko gelesen</td><td>Über- oder Untermobilisation</td><td>Hoch → Niedrig</td><td>Anzeige im Studien-Build deaktiviert</td></tr>
+<tr><td>H4</td><td>Forcierte Exspiration</td><td>Schwindel, Synkope</td><td>Mittel → Niedrig</td><td>Sitzend, Ausschlusskriterien, Anwesenheit, Abbruch</td></tr>
+<tr><td>H5</td><td>Ganganalyse</td><td>Sturz</td><td>Mittel → Niedrig</td><td>Begleitung, freier Raum, Stopp</td></tr>
+<tr><td>H6</td><td>Zervikales ROM</td><td>Schmerz, vaskuläre/neurologische Komplikation</td><td>Hoch → Niedrig</td><td>Red-Flag-SOP, keine forcierten Endgrade, Stopp-Wort</td></tr>
+<tr><td>H7</td><td>Video/Audio-Abfluss</td><td>Identitäts- und Gesundheitsdatenpanne</td><td>Hoch → Niedrig</td><td>Lokal only, Share aus, kein Herstellerzugriff, Opt-in Rohdaten</td></tr>
+<tr><td>H8</td><td>Cloud-Fehlkonfiguration</td><td>Datenvorfall</td><td>Hoch → Niedrig</td><td>Kein Cloud-Messbackend im Freeze</td></tr>
+<tr><td>H9</td><td>Therapeutic misconception</td><td>Teilnahme in der Hoffnung auf bessere Therapie</td><td>Mittel → Niedrig</td><td>PIS, ärztliche Aufklärung durch PI, nicht durch Hersteller</td></tr>
+<tr><td>H10</td><td>COI steuert Einschluss/Auswertung</td><td>Wissenschaftlicher Schaden, Vertrauensschaden</td><td>Hoch → Niedrig</td><td>Dokument 02/11, unabhängige Biometrie</td></tr>
+<tr><td>H11</td><td>Symptomfokussierung in der Psychosomatik</td><td>Verstärkte Körpersymptome</td><td>Mittel → Niedrig</td><td>Keine Ampel, optionale Nicht-Einsicht, Team-Schulung</td></tr>
+<tr><td>H12</td><td>Dritte im Kamerabild (Home)</td><td>Fremddatenschutz</td><td>Mittel → Niedrig</td><td>SOP Home, Leihtablet, Opt-in, kein Video-Upload</td></tr>
+</table>
+<h2>3. Nutzen-Risiko (Studienkontext)</h2>
+<p>Individueller klinischer Nutzen: keiner. Residualrisiko nach Kontrollen: gering und der wissenschaftlichen Fragestellung angemessen, <strong>sofern</strong> die PI die Kontrollen (Freeze, Firewall, SOP) tatsächlich durchsetzt.</p>
+<h2>4. Residualrisiko-Erklärung der PI</h2>
+<p>Die CMO bestätigt mit Kenntnisnahme, dass die klinischen Kontrollen (Aufklärung, Red Flags, kein Therapiebezug, UE-Erfassung) in ihren Häusern umsetzbar sind.</p>
+<p>CMO: Unterschrift ______________________ Datum ______________________ Hersteller: Unterschrift ______________________ Datum ______________________</p></body></html>

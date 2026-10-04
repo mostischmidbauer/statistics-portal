@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Clinimetric Lab",
+      "hasCanvas": false,
+      "bodyTextLen": 2534,
+      "bodyTextHash": "d9ecc64c7acf79f2ecffd3d3db1a013231ce8126a9bb741e3b489f9d04e55062",
+      "bodyTextPrefix": "Clinimetric Lab Research CRF · not a medical device EN DE Dashbo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Clinimetric Lab",
+      "hasCanvas": false,
+      "bodyTextLen": 2512,
+      "bodyTextHash": "5522f2dc70996e706a6621f67bafb462371b4747341fb3739be98c09ad5d2a2d",
+      "bodyTextPrefix": "Clinimetric Lab Research CRF · not a medical device EN DE Dashbo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
